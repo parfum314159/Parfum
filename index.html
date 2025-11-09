@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parfum - Pi Network Perfume Marketplace</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Parfum - Pi Network Perfume Marketplace</h1>
+    <button id="login">Login with Pi</button>
+    
+    <div id="storeDashboard" style="display:none;">
+      <h2>Store Dashboard</h2>
+      <form id="storeForm">
+        <input type="text" id="storeName" placeholder="Store Name" required>
+        <input type="text" id="country" placeholder="Country" required>
+        <input type="text" id="state" placeholder="State" required>
+        <input type="text" id="city" placeholder="City/Region" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="url" id="website" placeholder="Official Page (Optional)">
+        <select id="plan">
+          <option value="basic">Basic - 10 Pi/month</option>
+          <option value="vip">VIP - 50 Pi/month</option>
+        </select>
+        <button type="submit">Open Store</button>
+      </form>
+    </div>
+
+    <h2>Available Stores</h2>
+    <div id="storeResults"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
